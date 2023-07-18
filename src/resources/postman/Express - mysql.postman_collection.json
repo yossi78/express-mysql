@@ -21,7 +21,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:3000/api/users",
+					"raw": "http://127.0.0.1:3000/users",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -31,7 +31,6 @@
 					],
 					"port": "3000",
 					"path": [
-						"api",
 						"users"
 					]
 				}
@@ -39,7 +38,7 @@
 			"response": []
 		},
 		{
-			"name": "Add user - 2",
+			"name": "Add user -2",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -53,14 +52,16 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/users",
+					"raw": "http://127.0.0.1:3000/users",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"127",
+						"0",
+						"0",
+						"1"
 					],
 					"port": "3000",
 					"path": [
-						"api",
 						"users"
 					]
 				}
@@ -68,7 +69,7 @@
 			"response": []
 		},
 		{
-			"name": "get All Users",
+			"name": "get all users",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -85,7 +86,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:3000/api/users",
+					"raw": "http://127.0.0.1:3000/users",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -95,7 +96,6 @@
 					],
 					"port": "3000",
 					"path": [
-						"api",
 						"users"
 					]
 				}
@@ -117,7 +117,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:3000/api/users/1",
+					"raw": "http://127.0.0.1:3000/users/2",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -127,9 +127,8 @@
 					],
 					"port": "3000",
 					"path": [
-						"api",
 						"users",
-						"1"
+						"2"
 					]
 				}
 			},
@@ -150,7 +149,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:3000/api/users/1",
+					"raw": "http://127.0.0.1:3000/users/2",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -160,9 +159,8 @@
 					],
 					"port": "3000",
 					"path": [
-						"api",
 						"users",
-						"1"
+						"2"
 					]
 				}
 			},
