@@ -103,6 +103,41 @@
 			"response": []
 		},
 		{
+			"name": "get user by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3000/users/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Update User",
 			"request": {
 				"method": "PUT",
@@ -117,7 +152,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://127.0.0.1:3000/users/2",
+					"raw": "http://127.0.0.1:3000/users/1",
 					"protocol": "http",
 					"host": [
 						"127",
@@ -128,7 +163,7 @@
 					"port": "3000",
 					"path": [
 						"users",
-						"2"
+						"1"
 					]
 				}
 			},
