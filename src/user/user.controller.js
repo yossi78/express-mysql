@@ -2,8 +2,6 @@
 const db = require('../db/db-connections');
 
 
-
-
 const addUser = async (req, res)=> {
     try {
       const { name, email } = req.body;
@@ -41,6 +39,17 @@ const getAllUsers = async (req, res)=> {
   }
 
 
+  const getUserById = async (req, res)=> {
+    try {
+        const id = req.params.id;        
+        const user = await db.one('SELECT * FROM users WHERE id = $1', [id]);
+        res.json(user);
+      } catch (error) {
+        console.error(error);
+        res.status(500).send('Internal Server Error');
+      }
+  }
+
   const deleteUser = async (req, res)=> {
     try {
       const id = req.params.id;
@@ -54,4 +63,4 @@ const getAllUsers = async (req, res)=> {
 
 
 
-module.exports = {getAllUsers,addUser,updateUser,deleteUser};
+module.exports = {getAllUsers,getUserById,addUser,updateUser,deleteUser};
