@@ -19,7 +19,6 @@ app.get('/', (req, res) => {
 const db = require('./db/db');
 
 
-
 app.get('/api/users', async (req, res) => {
   try {
     const users = await db.any('SELECT * FROM users');
@@ -66,6 +65,8 @@ app.delete('/api/users/:id', async (req, res) => {
 
 
 
+
+const sqlQuery = require('./db/sql-queries');
 
 
 
