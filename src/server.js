@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 
 
 
-const db = require('./db');
+const db = require('./db/db');
 
 
 
