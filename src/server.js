@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
-const port = 3000; // choose any port number you prefer
+const port = 3000; 
 const db = require('./db/db-connections');
-const sqlQuery = require('./db/sql-queries');
+require('./db/sql-queries');
 
 
 

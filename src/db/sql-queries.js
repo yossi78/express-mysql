@@ -1,5 +1,5 @@
-
 const db = require('./db-connections');
+
 
 async function createUsersTable() {
     try {
@@ -17,8 +17,7 @@ async function createUsersTable() {
   }
 
 
-const sqlQuery = createUsersTable();
-module.exports = sqlQuery;
+  createUsersTable();
 
 
 
