@@ -1,5 +1,5 @@
 
-const db = require('./db');
+const db = require('./db-connections');
 
 async function createUsersTable() {
     try {
