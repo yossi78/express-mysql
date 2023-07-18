@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const port = 3000; 
-const usersRoutes = require('./router/userRoute');
+const usersRoutes = require('./router/user.route');
 require('./db/sql-queries');
 
 
