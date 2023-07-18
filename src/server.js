@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 const port = 3000; // choose any port number you prefer
+const db = require('./db/db');
+const sqlQuery = require('./db/sql-queries');
+
 
 
 app.listen(port, () => {
@@ -16,7 +19,7 @@ app.get('/', (req, res) => {
 
 
 
-const db = require('./db/db');
+
 
 
 app.get('/api/users', async (req, res) => {
@@ -66,7 +69,7 @@ app.delete('/api/users/:id', async (req, res) => {
 
 
 
-const sqlQuery = require('./db/sql-queries');
+
 
 
 
