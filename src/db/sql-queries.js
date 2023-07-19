@@ -16,8 +16,13 @@ async function createUsersTable() {
     }
   }
 
+  async function runQueries(){
+    createUsersTable();
+  }
 
-  createUsersTable();
+  module.exports={
+    runQueries:runQueries
+  }
 
 
 
