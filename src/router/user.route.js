@@ -1,7 +1,4 @@
 const express = require('express');
-// IMPORT THE METHODS
-//const { getAllUsers, addUser, updateUser ,deleteUser, getUserById} = require('../user/user.controller');
-// IMPORT THE CLASS
 const userController = require('../user/user.controller');
 const router = express.Router();
 

@@ -62,11 +62,6 @@ const getAllUsers = async (req, res)=> {
   }
 
 
-// EXPORT METHODS 
-//module.exports = {addUser,getAllUsers,getUserById,updateUser,deleteUser};
-
-
-// EXPORT THE CLASS
 module.exports={
   addUser:addUser,
   getAllUsers:getAllUsers,
